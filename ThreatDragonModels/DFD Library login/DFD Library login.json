@@ -38,8 +38,8 @@
             },
             "visible": true,
             "shape": "actor",
-            "id": "5a10cdb2-34bd-4690-965c-a308ad2c012c",
             "zIndex": 1,
+            "id": "5a10cdb2-34bd-4690-965c-a308ad2c012c",
             "data": {
               "type": "tm.Actor",
               "name": "Usuario",
@@ -99,8 +99,8 @@
             },
             "visible": true,
             "shape": "process",
-            "id": "2360493a-f0c0-4deb-bc31-60f79f872e37",
             "zIndex": 2,
+            "id": "2360493a-f0c0-4deb-bc31-60f79f872e37",
             "data": {
               "type": "tm.Process",
               "name": "Controlador\nweb",
@@ -176,15 +176,15 @@
               ]
             },
             "id": "fb7cfbe2-072f-4802-98af-6af4ba69fa04",
+            "labels": [
+              "Web response"
+            ],
             "source": {
               "cell": "2360493a-f0c0-4deb-bc31-60f79f872e37"
             },
             "target": {
               "cell": "5a10cdb2-34bd-4690-965c-a308ad2c012c"
             },
-            "labels": [
-              "Web response"
-            ],
             "vertices": [
               {
                 "x": 380,
@@ -239,15 +239,15 @@
               ]
             },
             "id": "02c24267-a3ec-42f5-bbc0-3ac9938aedca",
+            "labels": [
+              "web request"
+            ],
             "source": {
               "cell": "5a10cdb2-34bd-4690-965c-a308ad2c012c"
             },
             "target": {
               "cell": "2360493a-f0c0-4deb-bc31-60f79f872e37"
             },
-            "labels": [
-              "web request"
-            ],
             "vertices": [
               {
                 "x": 390,
@@ -256,106 +256,74 @@
             ]
           },
           {
-            "shape": "flow",
-            "attrs": {
-              "line": {
-                "stroke": "#333333",
-                "targetMarker": {
-                  "name": "block"
-                },
-                "sourceMarker": {
-                  "name": ""
-                },
-                "strokeDasharray": null
-              }
-            },
+            "shape": "trust-boundary-curve",
             "width": 200,
             "height": 100,
             "zIndex": 10,
             "connector": "smooth",
             "data": {
-              "type": "tm.Flow",
-              "name": "Usuario autenticado \nSQL Query",
+              "type": "tm.Boundary",
+              "name": "Limite Web Server/DB",
               "description": "",
-              "outOfScope": false,
-              "reasonOutOfScope": "",
-              "hasOpenThreats": false,
-              "isBidirectional": false,
-              "isEncrypted": false,
-              "isPublicNetwork": false,
-              "protocol": "",
-              "threats": []
+              "isTrustBoundary": true,
+              "hasOpenThreats": false
             },
-            "id": "4463fee5-a26d-471f-b0a7-15e18747d93b",
+            "id": "5f32bb41-0768-40bf-9b4f-2ac2a1a8630e",
+            "labels": [
+              "Limite Web Server/DB"
+            ],
             "source": {
-              "cell": "5cc998f6-d90d-4855-98ea-7f9ec06f48ed"
+              "x": 670,
+              "y": 420
             },
             "target": {
-              "cell": "7919ee25-e189-4608-ad97-712c71a48fcf"
+              "x": 890,
+              "y": 420
             },
-            "labels": [
-              "Usuario autenticado \nSQL Query"
-            ],
             "vertices": [
               {
-                "x": 860,
-                "y": 210
+                "x": 680,
+                "y": 340
               },
               {
                 "x": 880,
-                "y": 280
+                "y": 340
               }
             ]
           },
           {
-            "shape": "flow",
-            "attrs": {
-              "line": {
-                "stroke": "#333333",
-                "targetMarker": {
-                  "name": "block"
-                },
-                "sourceMarker": {
-                  "name": ""
-                },
-                "strokeDasharray": null
-              }
-            },
+            "shape": "trust-boundary-curve",
             "width": 200,
             "height": 100,
             "zIndex": 10,
             "connector": "smooth",
             "data": {
-              "type": "tm.Flow",
-              "name": "Usuario autenticado\nSQL Query\nResultado",
+              "type": "tm.Boundary",
+              "name": "Limite \nusuario/web \nserver",
               "description": "",
-              "outOfScope": false,
-              "reasonOutOfScope": "",
-              "hasOpenThreats": false,
-              "isBidirectional": false,
-              "isEncrypted": false,
-              "isPublicNetwork": false,
-              "protocol": "",
-              "threats": []
+              "isTrustBoundary": true,
+              "hasOpenThreats": false
             },
-            "id": "6b159801-ef8a-418f-9200-86737ba7d4fc",
+            "id": "2f9dc9f8-68aa-4df1-8612-7902eb759b74",
+            "labels": [
+              "Limite \nusuario/web \nserver"
+            ],
             "source": {
-              "cell": "7919ee25-e189-4608-ad97-712c71a48fcf"
+              "x": 280,
+              "y": 130
             },
             "target": {
-              "cell": "5cc998f6-d90d-4855-98ea-7f9ec06f48ed"
+              "x": 280,
+              "y": 270
             },
-            "labels": [
-              "Usuario autenticado\nSQL Query\nResultado"
-            ],
             "vertices": [
               {
-                "x": 700,
-                "y": 300
+                "x": 330,
+                "y": 180
               },
               {
-                "x": 700,
-                "y": 230
+                "x": 330,
+                "y": 220
               }
             ]
           },
@@ -391,63 +359,16 @@
               "threats": []
             },
             "id": "1c25424a-d57b-4a53-b3b6-ef9f36c1fd4e",
+            "labels": [
+              "Visitas"
+            ],
             "source": {
               "cell": "542f6f63-a7a6-4716-ae3b-2940c2535ab6"
             },
             "target": {
               "cell": "2360493a-f0c0-4deb-bc31-60f79f872e37"
             },
-            "labels": [
-              "Visitas"
-            ]
-          },
-          {
-            "shape": "flow",
-            "attrs": {
-              "line": {
-                "stroke": "#333333",
-                "targetMarker": {
-                  "name": "block"
-                },
-                "sourceMarker": {
-                  "name": ""
-                },
-                "strokeDasharray": null
-              }
-            },
-            "width": 200,
-            "height": 100,
-            "zIndex": 10,
-            "connector": "smooth",
-            "data": {
-              "type": "tm.Flow",
-              "name": "UsuarioAutenticado()",
-              "description": "",
-              "outOfScope": false,
-              "reasonOutOfScope": "",
-              "hasOpenThreats": false,
-              "isBidirectional": false,
-              "isEncrypted": false,
-              "isPublicNetwork": false,
-              "protocol": "",
-              "threats": []
-            },
-            "id": "df14a1eb-1b6d-4d7d-aa95-69119c3cc085",
-            "source": {
-              "cell": "2360493a-f0c0-4deb-bc31-60f79f872e37"
-            },
-            "target": {
-              "cell": "5cc998f6-d90d-4855-98ea-7f9ec06f48ed"
-            },
-            "labels": [
-              "UsuarioAutenticado()"
-            ],
-            "vertices": [
-              {
-                "x": 650,
-                "y": 168.5
-              }
-            ]
+            "vertices": []
           },
           {
             "shape": "flow",
@@ -481,15 +402,15 @@
               "threats": []
             },
             "id": "bccf9e36-1229-4dfe-b37f-f45155c5b13e",
+            "labels": [
+              "UsuarioAutenticado() resultado"
+            ],
             "source": {
               "cell": "5cc998f6-d90d-4855-98ea-7f9ec06f48ed"
             },
             "target": {
               "cell": "2360493a-f0c0-4deb-bc31-60f79f872e37"
             },
-            "labels": [
-              "UsuarioAutenticado() resultado"
-            ],
             "vertices": [
               {
                 "x": 650,
@@ -498,74 +419,197 @@
             ]
           },
           {
-            "shape": "trust-boundary-curve",
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "red",
+                "strokeWidth": 2.5,
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
             "width": 200,
             "height": 100,
             "zIndex": 10,
             "connector": "smooth",
             "data": {
-              "type": "tm.Boundary",
-              "name": "Limite Web Server/DB",
+              "type": "tm.Flow",
+              "name": "UsuarioAutenticado()",
               "description": "",
-              "isTrustBoundary": true,
-              "hasOpenThreats": false
+              "outOfScope": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": true,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": [
+                {
+                  "id": "f1371bcc-80ff-4d4d-b021-e2aa39091b03",
+                  "title": "Inyeccion de codigo",
+                  "status": "Open",
+                  "severity": "High",
+                  "type": "Tampering",
+                  "description": "Un atacante podría enviar una entrada inyectando código malicioso para evitar obtener privilegios.",
+                  "mitigation": "1. Se aplican verificaciones de tipo, formato, longitud y rango de datos.\n2. Todos los datos enviados desde el cliente se validan.\n3. Ninguna decisión de seguridad se basa en parámetros (por ejemplo, parámetros de URL) que se pueden manipular.\n4. Filtrado de entrada mediante validación de lista de permitidos.\n5. Se utiliza codificación de salida.",
+                  "modelType": "default",
+                  "new": false,
+                  "number": 7,
+                  "score": "3"
+                }
+              ]
             },
-            "id": "5f32bb41-0768-40bf-9b4f-2ac2a1a8630e",
+            "id": "df14a1eb-1b6d-4d7d-aa95-69119c3cc085",
+            "labels": [
+              "UsuarioAutenticado()"
+            ],
             "source": {
-              "x": 670,
-              "y": 420
+              "cell": "2360493a-f0c0-4deb-bc31-60f79f872e37"
             },
             "target": {
-              "x": 890,
-              "y": 420
+              "cell": "5cc998f6-d90d-4855-98ea-7f9ec06f48ed"
             },
-            "labels": [
-              "Limite Web Server/DB"
-            ],
             "vertices": [
               {
-                "x": 680,
-                "y": 340
-              },
-              {
-                "x": 880,
-                "y": 340
+                "x": 650,
+                "y": 168.5
               }
             ]
           },
           {
-            "shape": "trust-boundary-curve",
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
             "width": 200,
             "height": 100,
             "zIndex": 10,
             "connector": "smooth",
             "data": {
-              "type": "tm.Boundary",
-              "name": "Limite \nusuario/web \nserver",
+              "type": "tm.Flow",
+              "name": "Usuario autenticado\nSQL Query\nResultado",
               "description": "",
-              "isTrustBoundary": true,
-              "hasOpenThreats": false
+              "outOfScope": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": [
+                {
+                  "id": "6311ae7f-5412-4d72-8b3d-322439159058",
+                  "title": "Ataque Man in the Middle",
+                  "status": "Mitigated",
+                  "severity": "Medium",
+                  "type": "Information disclosure",
+                  "description": "Un atacante podría interceptar las consultas de la base de datos en transito y obtener información confidencial, como credenciales de la base de datos, parámetros de consulta o resultados de la consulta (es poco probable ya que el flujo de datos se realiza a través de una red privada).",
+                  "mitigation": "Aplicar una conexión cifrada en el servidor de base de datos.",
+                  "modelType": "default",
+                  "new": false,
+                  "number": 9,
+                  "score": "2"
+                }
+              ]
             },
-            "id": "2f9dc9f8-68aa-4df1-8612-7902eb759b74",
+            "id": "6b159801-ef8a-418f-9200-86737ba7d4fc",
+            "labels": [
+              "Usuario autenticado\nSQL Query\nResultado"
+            ],
             "source": {
-              "x": 280,
-              "y": 130
+              "cell": "7919ee25-e189-4608-ad97-712c71a48fcf"
             },
             "target": {
-              "x": 280,
-              "y": 270
+              "cell": "5cc998f6-d90d-4855-98ea-7f9ec06f48ed"
             },
-            "labels": [
-              "Limite \nusuario/web \nserver"
-            ],
             "vertices": [
               {
-                "x": 330,
-                "y": 180
+                "x": 700,
+                "y": 300
               },
               {
-                "x": 330,
-                "y": 220
+                "x": 700,
+                "y": 230
+              }
+            ]
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "Usuario autenticado \nSQL Query",
+              "description": "",
+              "outOfScope": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": [
+                {
+                  "id": "71c6769d-f897-4396-bfd0-e100d7b690a5",
+                  "title": "Ataque Man in the middle",
+                  "status": "Mitigated",
+                  "severity": "Medium",
+                  "type": "Information disclosure",
+                  "description": "Un atacante podría interceptar las consultas de la base de datos y obtener información confidencial, como credenciales de la base de datos, parámetros de consulta o resultados de la consulta (es poco probable ya que el flujo de datos se realiza a través de una red privada).",
+                  "mitigation": "Aplicar una conexión cifrada en el servidor de base de datos.",
+                  "modelType": "default",
+                  "new": false,
+                  "number": 8,
+                  "score": "2"
+                }
+              ]
+            },
+            "id": "4463fee5-a26d-471f-b0a7-15e18747d93b",
+            "labels": [
+              "Usuario autenticado \nSQL Query"
+            ],
+            "source": {
+              "cell": "5cc998f6-d90d-4855-98ea-7f9ec06f48ed"
+            },
+            "target": {
+              "cell": "7919ee25-e189-4608-ad97-712c71a48fcf"
+            },
+            "vertices": [
+              {
+                "x": 860,
+                "y": 210
+              },
+              {
+                "x": 880,
+                "y": 280
               }
             ]
           },
@@ -593,8 +637,8 @@
             },
             "visible": true,
             "shape": "store",
-            "id": "542f6f63-a7a6-4716-ae3b-2940c2535ab6",
             "zIndex": 11,
+            "id": "542f6f63-a7a6-4716-ae3b-2940c2535ab6",
             "data": {
               "type": "tm.Store",
               "name": "Paginas web\nen discos",
@@ -607,7 +651,21 @@
               "isSigned": false,
               "storesCredentials": false,
               "storesInventory": false,
-              "threats": []
+              "threats": [
+                {
+                  "id": "87bed2a3-b4c0-43b1-b90f-f16c99f4023d",
+                  "title": "Modificacion sin autorizacion",
+                  "status": "Mitigated",
+                  "severity": "High",
+                  "type": "Tampering",
+                  "description": "Un atacante podría modificar las paginas web sin autorización.",
+                  "mitigation": "Las paginas solo tienen acceso de lectura. \nÚnicamente el usuario administrador puede tener acceso de escritura.",
+                  "modelType": "default",
+                  "new": false,
+                  "number": 6,
+                  "score": "3"
+                }
+              ]
             }
           },
           {
@@ -624,27 +682,41 @@
                 "text": "Proceso \nde login"
               },
               "body": {
-                "stroke": "#333333",
-                "strokeWidth": 1.5,
+                "stroke": "red",
+                "strokeWidth": 2.5,
                 "strokeDasharray": null
               }
             },
             "visible": true,
             "shape": "process",
-            "id": "5cc998f6-d90d-4855-98ea-7f9ec06f48ed",
             "zIndex": 12,
+            "id": "5cc998f6-d90d-4855-98ea-7f9ec06f48ed",
             "data": {
               "type": "tm.Process",
               "name": "Proceso \nde login",
               "description": "",
               "outOfScope": false,
               "reasonOutOfScope": "",
-              "hasOpenThreats": false,
+              "hasOpenThreats": true,
               "handlesCardPayment": false,
               "handlesGoodsOrServices": false,
               "isWebApplication": false,
               "privilegeLevel": "",
-              "threats": []
+              "threats": [
+                {
+                  "id": "00f34655-a8b0-439c-a47e-0286b23f258c",
+                  "title": "Ataque de fuerza bruta",
+                  "status": "Open",
+                  "severity": "Medium",
+                  "type": "Elevation of privilege",
+                  "description": "Un atacante podría realizar un ataque con un diccionario para tratar de adivinar la contraseña de los usuarios.",
+                  "mitigation": "Se debe bloquear la cuenta después de N intentos fallidos.\nSe deben validar la complejidad y longitud de las contraseñas.",
+                  "modelType": "default",
+                  "new": false,
+                  "number": 10,
+                  "score": "2"
+                }
+              ]
             }
           },
           {
@@ -661,31 +733,60 @@
                 "text": "Base de \ndatos"
               },
               "topLine": {
-                "strokeWidth": 1.5,
+                "stroke": "red",
+                "strokeWidth": 2.5,
                 "strokeDasharray": null
               },
               "bottomLine": {
-                "strokeWidth": 1.5,
+                "stroke": "red",
+                "strokeWidth": 2.5,
                 "strokeDasharray": null
               }
             },
             "visible": true,
             "shape": "store",
-            "id": "7919ee25-e189-4608-ad97-712c71a48fcf",
             "zIndex": 13,
+            "id": "7919ee25-e189-4608-ad97-712c71a48fcf",
             "data": {
               "type": "tm.Store",
               "name": "Base de \ndatos",
               "description": "",
               "outOfScope": false,
               "reasonOutOfScope": "",
-              "hasOpenThreats": false,
+              "hasOpenThreats": true,
               "isALog": false,
               "isEncrypted": false,
               "isSigned": false,
               "storesCredentials": false,
               "storesInventory": false,
-              "threats": []
+              "threats": [
+                {
+                  "id": "aeafe16a-d104-4dce-98a6-92abe1fbb7ac",
+                  "title": "Acceso no autorizado",
+                  "status": "Open",
+                  "severity": "Medium",
+                  "type": "Tampering",
+                  "description": "Un atacante podria enviar una consulta a la BD",
+                  "mitigation": "Requerir que todas las contraseñas sean autenticadas.",
+                  "modelType": "default",
+                  "new": false,
+                  "number": 11,
+                  "score": "2"
+                },
+                {
+                  "id": "e4d2f596-ed6a-4e93-a7e4-34823460fa3b",
+                  "title": "Robo de credenciales",
+                  "status": "Open",
+                  "severity": "Medium",
+                  "type": "Information disclosure",
+                  "description": "Un atacante podría obtener las credenciales de la base de datos para realizar consultas no autorizadas.",
+                  "mitigation": "Utilizar un firewall para restringir el acceso a la base de datos únicamente a la dirección IP del trabajador en segundo plano.",
+                  "modelType": "default",
+                  "new": false,
+                  "number": 12,
+                  "score": "2"
+                }
+              ]
             }
           }
         ],
@@ -694,6 +795,6 @@
     ],
     "diagramTop": 1,
     "reviewer": "",
-    "threatTop": 5
+    "threatTop": 12
   }
 }
