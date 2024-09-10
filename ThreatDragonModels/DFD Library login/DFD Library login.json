@@ -614,6 +614,504 @@
             ]
           },
           {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "red",
+                "strokeWidth": 2.5,
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "web request",
+              "description": "",
+              "outOfScope": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": true,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": [
+                {
+                  "id": "b46ae5dd-3165-4049-8d77-e1d7ec38f7d7",
+                  "title": "Divulgación de informacion",
+                  "status": "Open",
+                  "severity": "High",
+                  "type": "Information disclosure",
+                  "description": "Estas solicitudes se transmiten a través de la Internet publica y podrían ser interceptadas por un atacante.",
+                  "mitigation": "Las solicitudes deberían requerir HTTPS. Esto proporcionara confidencialidad e integridad. HTTP no debe ser compatible.",
+                  "modelType": "default",
+                  "new": false,
+                  "number": 16,
+                  "score": "3"
+                }
+              ]
+            },
+            "id": "eec841a5-b5f7-4c6d-b3f4-1351d1665e78",
+            "source": {
+              "cell": "3e580783-b3f2-4faa-bf0e-cffa7a01b35e"
+            },
+            "target": {
+              "cell": "e3d51622-5418-467e-bec6-04bb887a18d5"
+            },
+            "labels": [
+              "web request"
+            ],
+            "vertices": [
+              {
+                "x": 1380,
+                "y": 270
+              }
+            ]
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "red",
+                "strokeWidth": 2.5,
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "Web response",
+              "description": "",
+              "outOfScope": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": true,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": [
+                {
+                  "id": "32e5a75d-358e-4b38-aca7-e5fd4caffb16",
+                  "title": "Divulgación de informacion",
+                  "status": "Open",
+                  "severity": "High",
+                  "type": "Information disclosure",
+                  "description": "Estas respuestas se transmiten a través de la Internet publica y podrían ser interceptadas por un atacante.",
+                  "mitigation": "Las respuestas deberían requerir HTTPS. Esto proporcionara confidencialidad e integridad. HTTP no debe ser compatible.",
+                  "modelType": "default",
+                  "new": false,
+                  "number": 17,
+                  "score": "3"
+                }
+              ]
+            },
+            "id": "57c977fb-9359-4f5d-abed-859085bc99c9",
+            "source": {
+              "cell": "e3d51622-5418-467e-bec6-04bb887a18d5"
+            },
+            "target": {
+              "cell": "3e580783-b3f2-4faa-bf0e-cffa7a01b35e"
+            },
+            "labels": [
+              "Web response"
+            ],
+            "vertices": [
+              {
+                "x": 1380,
+                "y": 160
+              }
+            ]
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "red",
+                "strokeWidth": 2.5,
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "web request",
+              "description": "",
+              "outOfScope": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": true,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": [
+                {
+                  "id": "9ddac911-fe14-4c17-9077-79c9a841d235",
+                  "title": "Divulgación de información ",
+                  "status": "Open",
+                  "severity": "High",
+                  "type": "Information disclosure",
+                  "description": "Estas solicitudes se transmiten a través de la Internet publica y podrían ser interceptadas por un atacante.",
+                  "mitigation": "Las solicitudes deberían requerir HTTPS. Esto proporcionara confidencialidad e integridad. HTTP no debe ser compatible.",
+                  "modelType": "default",
+                  "new": false,
+                  "number": 18,
+                  "score": "3"
+                }
+              ]
+            },
+            "id": "6ab63f7f-e905-42e9-988b-4aed49d1879e",
+            "source": {
+              "cell": "af95918c-513e-462f-ba99-da903a2116e0"
+            },
+            "target": {
+              "cell": "e3d51622-5418-467e-bec6-04bb887a18d5"
+            },
+            "labels": [
+              "web request"
+            ],
+            "vertices": [
+              {
+                "x": 1450,
+                "y": 340
+              }
+            ]
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "red",
+                "strokeWidth": 2.5,
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "web response",
+              "description": "",
+              "outOfScope": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": true,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": [
+                {
+                  "id": "5d1ca588-cc5c-41f2-a62e-b2cada7b537c",
+                  "title": "Divulgación de información ",
+                  "status": "Open",
+                  "severity": "High",
+                  "type": "Information disclosure",
+                  "description": "Estas respuestas se transmiten a través de la Internet publica y podrían ser interceptadas por un atacante.",
+                  "mitigation": "Las respuestas deberían requerir HTTPS. Esto proporcionara confidencialidad e integridad. HTTP no debe ser compatible.",
+                  "modelType": "default",
+                  "new": false,
+                  "number": 19,
+                  "score": "3"
+                }
+              ]
+            },
+            "id": "aef37678-e3d4-4f45-90a0-469caf0c6feb",
+            "source": {
+              "cell": "e3d51622-5418-467e-bec6-04bb887a18d5"
+            },
+            "target": {
+              "cell": "af95918c-513e-462f-ba99-da903a2116e0"
+            },
+            "labels": [
+              "web response"
+            ],
+            "vertices": [
+              {
+                "x": 1580,
+                "y": 340
+              }
+            ]
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": "4 3"
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "Paginas ",
+              "description": "",
+              "outOfScope": true,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": []
+            },
+            "id": "38595af7-f441-4e42-8515-4bcfacc9ad38",
+            "source": {
+              "cell": "923f79dd-33c7-4028-8f90-cb9ef82a84a7"
+            },
+            "target": {
+              "cell": "e3d51622-5418-467e-bec6-04bb887a18d5"
+            },
+            "labels": [
+              "Paginas "
+            ]
+          },
+          {
+            "shape": "trust-boundary-curve",
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Boundary",
+              "name": "Limite usuario/web server",
+              "description": "",
+              "isTrustBoundary": true,
+              "hasOpenThreats": false
+            },
+            "id": "6f15fa29-c64a-467a-acce-fcfb2165005e",
+            "source": {
+              "x": 1220,
+              "y": 240
+            },
+            "target": {
+              "x": 1410,
+              "y": 460
+            },
+            "labels": [
+              "Limite usuario/web server"
+            ],
+            "vertices": [
+              {
+                "x": 1360,
+                "y": 330
+              }
+            ]
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "Queries",
+              "description": "",
+              "outOfScope": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": [
+                {
+                  "id": "0a407ba8-7088-4b8c-9843-51fbb0f7c6e9",
+                  "title": "Divulgación de información ",
+                  "status": "Mitigated",
+                  "severity": "Medium",
+                  "type": "Information disclosure",
+                  "description": "Un atacante podría interceptar las consultas de la base de datos en transito y obtener información confidencial, como credenciales de la base de datos, parámetros de consulta o resultados de consulta (es poco probable ya que el flujo de datos se realiza a través de una red privada).",
+                  "mitigation": "Aplicar una conexión cifrada en el servidor de la base de datos.",
+                  "modelType": "default",
+                  "new": false,
+                  "number": 24,
+                  "score": "2"
+                }
+              ]
+            },
+            "id": "344418ab-5ab5-4861-8b2e-7922f0de231b",
+            "source": {
+              "cell": "e3d51622-5418-467e-bec6-04bb887a18d5"
+            },
+            "target": {
+              "cell": "2dc28d60-3d77-467f-8e13-f270d511ce31"
+            },
+            "labels": [
+              "Queries"
+            ],
+            "vertices": [
+              {
+                "x": 1640,
+                "y": 120
+              }
+            ]
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "Resultados web app query",
+              "description": "",
+              "outOfScope": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": [
+                {
+                  "id": "fd7f467e-6f9a-4056-90e4-9eb71594b8ce",
+                  "title": "Divulgación de información ",
+                  "status": "Mitigated",
+                  "severity": "Low",
+                  "type": "Information disclosure",
+                  "description": "Un atacante podría interceptar las consultas de la base de datos en tránsito y obtener información confidencial como credenciales de la base de datos, parámetros de consulta o resultados de la consulta (es poco probable ya que el flujo de datos se realiza a través de una red privada).",
+                  "mitigation": "Aplicar una conexión cifrada en el servidor de la base de datos.",
+                  "modelType": "default",
+                  "new": false,
+                  "number": 26,
+                  "score": "1"
+                }
+              ]
+            },
+            "id": "d74efcb5-18a6-4239-b2fc-298ceac7fefe",
+            "source": {
+              "cell": "2dc28d60-3d77-467f-8e13-f270d511ce31"
+            },
+            "target": {
+              "cell": "e3d51622-5418-467e-bec6-04bb887a18d5"
+            },
+            "labels": [
+              "Resultados web app query"
+            ],
+            "vertices": [
+              {
+                "x": 1660,
+                "y": 229.5
+              }
+            ]
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": "4 3"
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "Lee web \napp config",
+              "description": "",
+              "outOfScope": true,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": []
+            },
+            "id": "62b4bc1c-5fc7-41ae-9b62-0d804cc1ba28",
+            "source": {
+              "cell": "094ce0a3-4abb-4ccb-a214-fd50e3c7ee0c"
+            },
+            "target": {
+              "cell": "e3d51622-5418-467e-bec6-04bb887a18d5"
+            },
+            "vertices": [
+              {
+                "x": 1640,
+                "y": 300
+              }
+            ],
+            "labels": [
+              "Lee web \napp config"
+            ]
+          },
+          {
             "position": {
               "x": 360,
               "y": 320
@@ -788,6 +1286,335 @@
                 }
               ]
             }
+          },
+          {
+            "position": {
+              "x": 1147.5,
+              "y": 270.00000000000006
+            },
+            "size": {
+              "width": 112.5,
+              "height": 60
+            },
+            "attrs": {
+              "text": {
+                "text": "Usuario"
+              },
+              "body": {
+                "stroke": "red",
+                "strokeWidth": 2.5,
+                "strokeDasharray": null
+              }
+            },
+            "visible": true,
+            "shape": "actor",
+            "id": "3e580783-b3f2-4faa-bf0e-cffa7a01b35e",
+            "zIndex": 14,
+            "data": {
+              "type": "tm.Actor",
+              "name": "Usuario",
+              "description": "",
+              "outOfScope": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": true,
+              "providesAuthentication": false,
+              "threats": [
+                {
+                  "id": "9e02219c-b9f9-471d-ac8f-fc96d4aec4c3",
+                  "title": "Suplantacion de identidad",
+                  "status": "Open",
+                  "severity": "Low",
+                  "type": "Spoofing",
+                  "description": "Acción de amenaza destinada a acceder y utilizar las credenciales de otro usuario como el nombre de usuario y la contraseña. ",
+                  "mitigation": "1. Autenticación adecuada\n2. Proteger datos secretos\n3. No almacenar secretos",
+                  "modelType": "default",
+                  "new": false,
+                  "number": 13,
+                  "score": "1"
+                }
+              ]
+            }
+          },
+          {
+            "position": {
+              "x": 1260,
+              "y": 390
+            },
+            "size": {
+              "width": 112.5,
+              "height": 60
+            },
+            "attrs": {
+              "text": {
+                "text": "Bibliotecario"
+              },
+              "body": {
+                "stroke": "red",
+                "strokeWidth": 2.5,
+                "strokeDasharray": null
+              }
+            },
+            "visible": true,
+            "shape": "actor",
+            "id": "af95918c-513e-462f-ba99-da903a2116e0",
+            "zIndex": 15,
+            "data": {
+              "type": "tm.Actor",
+              "name": "Bibliotecario",
+              "description": "",
+              "outOfScope": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": true,
+              "providesAuthentication": false,
+              "threats": [
+                {
+                  "id": "c8da3b50-c7b1-492c-9970-9a0341635453",
+                  "title": "Suplantacion de identidad",
+                  "status": "Open",
+                  "severity": "Low",
+                  "type": "Spoofing",
+                  "description": "Acción destinada a acceder y utilizar las credenciales de otro usuario como el nombre de usuario y la contraseña.",
+                  "mitigation": "1. Autenticación adecuada\n2. Proteger datos secretos\n3. No almacenar secretos",
+                  "modelType": "default",
+                  "new": false,
+                  "number": 14,
+                  "score": "1"
+                }
+              ]
+            }
+          },
+          {
+            "position": {
+              "x": 1436,
+              "y": 180.00000000000006
+            },
+            "size": {
+              "width": 110,
+              "height": 90
+            },
+            "attrs": {
+              "text": {
+                "text": "Sitio web\nbiblioteca"
+              },
+              "body": {
+                "stroke": "red",
+                "strokeWidth": 2.5,
+                "strokeDasharray": null
+              }
+            },
+            "visible": true,
+            "shape": "process",
+            "id": "e3d51622-5418-467e-bec6-04bb887a18d5",
+            "zIndex": 16,
+            "data": {
+              "type": "tm.Process",
+              "name": "Sitio web\nbiblioteca",
+              "description": "",
+              "outOfScope": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": true,
+              "handlesCardPayment": false,
+              "handlesGoodsOrServices": false,
+              "isWebApplication": false,
+              "privilegeLevel": "",
+              "threats": [
+                {
+                  "id": "5b44c8ed-e7bc-4cb2-9c0d-c1328c9dca19",
+                  "title": "Denegacion de servicio",
+                  "status": "Open",
+                  "severity": "Medium",
+                  "type": "Denial of service",
+                  "description": "Un atacante podría denegar el acceso a usuarios validos, haciendo que el servidor web no este disponible o sea inutilizable temporalmente por medio del envío de múltiples peticiones simultaneas.",
+                  "mitigation": "Se utiliza un balanceo de cargas en el servidor web. \nSe monitorean las direcciones IP de los clientes y al encontrar un posible ataque, se bloquea el acceso.\nSe considera contratar un servicio de VPN para ocultar la dirección IP publica a los clientes.",
+                  "modelType": "default",
+                  "new": false,
+                  "number": 15,
+                  "score": "2"
+                }
+              ]
+            }
+          },
+          {
+            "position": {
+              "x": 1490,
+              "y": 0
+            },
+            "size": {
+              "width": 120,
+              "height": 60
+            },
+            "attrs": {
+              "text": {
+                "text": "Paginas web en disco"
+              },
+              "topLine": {
+                "strokeWidth": 1.5,
+                "strokeDasharray": null
+              },
+              "bottomLine": {
+                "strokeWidth": 1.5,
+                "strokeDasharray": null
+              }
+            },
+            "visible": true,
+            "shape": "store",
+            "id": "923f79dd-33c7-4028-8f90-cb9ef82a84a7",
+            "zIndex": 17,
+            "data": {
+              "type": "tm.Store",
+              "name": "Paginas web en disco",
+              "description": "",
+              "outOfScope": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "isALog": false,
+              "isEncrypted": false,
+              "isSigned": false,
+              "storesCredentials": false,
+              "storesInventory": false,
+              "threats": [
+                {
+                  "id": "faa12965-a58d-40cb-9a65-c28d4b0cf4f4",
+                  "title": "Modificación sin autorización",
+                  "status": "Mitigated",
+                  "severity": "High",
+                  "type": "Tampering",
+                  "description": "Un atacante podría modificar las paginas web sin autorización.",
+                  "mitigation": "Las paginas solo tienen acceso de lectura. Únicamente el usuario administrador puede tener acceso de escritura.",
+                  "modelType": "default",
+                  "new": false,
+                  "number": 20,
+                  "score": "3"
+                }
+              ]
+            }
+          },
+          {
+            "position": {
+              "x": 1730,
+              "y": 90
+            },
+            "size": {
+              "width": 120,
+              "height": 60
+            },
+            "attrs": {
+              "text": {
+                "text": "Base de datos"
+              },
+              "topLine": {
+                "stroke": "red",
+                "strokeWidth": 2.5,
+                "strokeDasharray": null
+              },
+              "bottomLine": {
+                "stroke": "red",
+                "strokeWidth": 2.5,
+                "strokeDasharray": null
+              }
+            },
+            "visible": true,
+            "shape": "store",
+            "id": "2dc28d60-3d77-467f-8e13-f270d511ce31",
+            "zIndex": 18,
+            "data": {
+              "type": "tm.Store",
+              "name": "Base de datos",
+              "description": "",
+              "outOfScope": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": true,
+              "isALog": false,
+              "isEncrypted": false,
+              "isSigned": false,
+              "storesCredentials": false,
+              "storesInventory": false,
+              "threats": [
+                {
+                  "id": "1deacaee-6520-4bdb-bfbe-ccc5b2865145",
+                  "title": "Divulgación de información ",
+                  "status": "Mitigated",
+                  "severity": "Medium",
+                  "type": "Information disclosure",
+                  "description": "Un atacante podría enviar una consulta a la BD.",
+                  "mitigation": "Requerir que todas las consultas sean autenticadas.",
+                  "modelType": "default",
+                  "new": false,
+                  "number": 21,
+                  "score": "2"
+                },
+                {
+                  "id": "d870b8ce-83d3-4dd9-9881-aa8e687f05c1",
+                  "title": "Divulgación de información",
+                  "status": "Open",
+                  "severity": "Medium",
+                  "type": "Information disclosure",
+                  "description": "Un atacante podría obtener las credenciales de la base de datos y utilizarlas para realizar consultas no autorizadas.",
+                  "mitigation": "Utilizar un firewall para restringir el acceso a la base de datos únicamente a la dirección IP del trabajador en segundo plano.",
+                  "modelType": "default",
+                  "new": false,
+                  "number": 22,
+                  "score": "2"
+                }
+              ]
+            }
+          },
+          {
+            "position": {
+              "x": 1750,
+              "y": 270.00000000000006
+            },
+            "size": {
+              "width": 120,
+              "height": 60
+            },
+            "attrs": {
+              "text": {
+                "text": "web application config"
+              },
+              "topLine": {
+                "stroke": "red",
+                "strokeWidth": 2.5,
+                "strokeDasharray": null
+              },
+              "bottomLine": {
+                "stroke": "red",
+                "strokeWidth": 2.5,
+                "strokeDasharray": null
+              }
+            },
+            "visible": true,
+            "shape": "store",
+            "id": "094ce0a3-4abb-4ccb-a214-fd50e3c7ee0c",
+            "zIndex": 19,
+            "data": {
+              "type": "tm.Store",
+              "name": "web application config",
+              "description": "",
+              "outOfScope": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": true,
+              "isALog": false,
+              "isEncrypted": false,
+              "isSigned": false,
+              "storesCredentials": false,
+              "storesInventory": false,
+              "threats": [
+                {
+                  "id": "e8ef6442-bd50-46ef-b003-865b8df50385",
+                  "title": "Divulgación de información ",
+                  "status": "Open",
+                  "severity": "High",
+                  "type": "Information disclosure",
+                  "description": "La configuración de la aplicación web almacena las credenciales utilizadas por la aplicación web para acceder a la cola de mensajes. Un atacante podría robarlos y utilizarlos para leer datos confidenciales o colocar mensajes dudosos en la cola.",
+                  "mitigation": "Las credenciales almacenadas deben estar cifradas.",
+                  "modelType": "default",
+                  "new": false,
+                  "number": 23,
+                  "score": "3"
+                }
+              ]
+            }
           }
         ],
         "description": "Login"
@@ -795,6 +1622,6 @@
     ],
     "diagramTop": 1,
     "reviewer": "",
-    "threatTop": 12
+    "threatTop": 27
   }
 }
