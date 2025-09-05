@@ -2,8 +2,8 @@
   "version": "2.5.0",
   "summary": {
     "title": "DFD Library login",
-    "owner": "Abraham Vazquez",
-    "description": "Diagrama de flujo de datos de inicio de sesión del usuario para el sitio web de la biblioteca universitaria. Una de mis tareas para Programación segura.",
+    "owner": "Leonardo Martinez",
+    "description": "Diagrama de flujo de datos de inicio de sesión del usuario para el sitio web de la biblioteca universitaria.",
     "id": 0
   },
   "detail": {
@@ -3467,7 +3467,7 @@
       }
     ],
     "diagramTop": 1,
-    "reviewer": "",
+    "reviewer": "Guillermo Vera",
     "threatTop": 27
   }
 }
