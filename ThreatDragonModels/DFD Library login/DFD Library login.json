@@ -1172,10 +1172,6 @@
             },
             "vertices": [
               {
-                "x": 1220,
-                "y": 120
-              },
-              {
                 "x": 1340,
                 "y": 150
               }
@@ -1360,12 +1356,7 @@
               "cell": "2dc28d60-3d77-467f-8e13-f270d511ce31",
               "port": "b93c86a6-c0b6-4724-9f62-2b6232516779"
             },
-            "vertices": [
-              {
-                "x": 1800,
-                "y": 520
-              }
-            ]
+            "vertices": []
           },
           {
             "shape": "flow",
@@ -1412,8 +1403,8 @@
             },
             "vertices": [
               {
-                "x": 1930,
-                "y": 440
+                "x": 2110,
+                "y": 510
               }
             ]
           },
@@ -1483,52 +1474,6 @@
             "connector": "smooth",
             "data": {
               "type": "tm.Flow",
-              "name": "Data Flow",
-              "description": "",
-              "outOfScope": false,
-              "isTrustBoundary": false,
-              "reasonOutOfScope": "",
-              "hasOpenThreats": false,
-              "isBidirectional": false,
-              "isEncrypted": false,
-              "isPublicNetwork": false,
-              "protocol": "",
-              "threats": []
-            },
-            "labels": [
-              "Data Flow"
-            ],
-            "id": "c9599cd6-fddc-4dcb-bc0d-f8195dde9fd9",
-            "source": {
-              "cell": "e3d51622-5418-467e-bec6-04bb887a18d5",
-              "port": "1c5d8ae9-ed98-406d-bb91-5382501d7f79"
-            },
-            "target": {
-              "cell": "acfeadf9-14c9-40f8-b9a6-a562e3a033cb",
-              "port": "43950961-5bfc-4e31-a268-ad60090c2f98"
-            },
-            "vertices": []
-          },
-          {
-            "shape": "flow",
-            "attrs": {
-              "line": {
-                "stroke": "#333333",
-                "targetMarker": {
-                  "name": "block"
-                },
-                "sourceMarker": {
-                  "name": ""
-                },
-                "strokeDasharray": null
-              }
-            },
-            "width": 200,
-            "height": 100,
-            "zIndex": 10,
-            "connector": "smooth",
-            "data": {
-              "type": "tm.Flow",
               "name": "Eventos",
               "description": "",
               "outOfScope": false,
@@ -1555,20 +1500,106 @@
             },
             "vertices": [
               {
-                "x": 1700,
-                "y": 220
+                "x": 1680,
+                "y": 260
               }
+            ]
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "Credenciales de Usuario",
+              "description": "",
+              "outOfScope": false,
+              "isTrustBoundary": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": []
+            },
+            "labels": [
+              "Credenciales de Usuario"
             ],
-            "tools": {
-              "items": [
-                "boundary",
-                "button-remove",
-                "vertices",
-                "source-arrowhead",
-                "target-arrowhead"
-              ],
-              "name": null
-            }
+            "id": "c9599cd6-fddc-4dcb-bc0d-f8195dde9fd9",
+            "source": {
+              "cell": "e3d51622-5418-467e-bec6-04bb887a18d5",
+              "port": "1c5d8ae9-ed98-406d-bb91-5382501d7f79"
+            },
+            "target": {
+              "cell": "acfeadf9-14c9-40f8-b9a6-a562e3a033cb",
+              "port": "3ba29c3e-1917-4c0c-8aee-cb1ec6a0e94f"
+            },
+            "vertices": []
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "Respuesta de Auth",
+              "description": "",
+              "outOfScope": false,
+              "isTrustBoundary": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": []
+            },
+            "labels": [
+              "Respuesta de Auth"
+            ],
+            "id": "3ec61ba4-10c0-4e34-8473-6a7c9be616a3",
+            "source": {
+              "cell": "acfeadf9-14c9-40f8-b9a6-a562e3a033cb"
+            },
+            "target": {
+              "cell": "e3d51622-5418-467e-bec6-04bb887a18d5",
+              "port": "1c5d8ae9-ed98-406d-bb91-5382501d7f79"
+            },
+            "vertices": [
+              {
+                "x": 1690,
+                "y": 430
+              }
+            ]
           },
           {
             "position": {
@@ -2524,8 +2555,8 @@
           },
           {
             "position": {
-              "x": 1980,
-              "y": 540
+              "x": 2160,
+              "y": 610
             },
             "size": {
               "width": 120,
@@ -2809,6 +2840,19 @@
                   "new": false,
                   "number": 23,
                   "score": "3"
+                },
+                {
+                  "id": "5b313b67-69b2-489c-a8c7-7d84c539ec52",
+                  "title": "Permisos incorrectos de archivos de configuracion",
+                  "status": "Open",
+                  "severity": "Medium",
+                  "type": "Elevation of privilege",
+                  "description": "Provide a description for this threat",
+                  "mitigation": "Provide remediation for this threat or a reason if status is N/A",
+                  "modelType": "default",
+                  "new": false,
+                  "number": 29,
+                  "score": ""
                 }
               ]
             }
@@ -2827,8 +2871,8 @@
                 "text": "Usuario Anonimo"
               },
               "body": {
-                "stroke": "#333333",
-                "strokeWidth": 1.5,
+                "stroke": "red",
+                "strokeWidth": 2.5,
                 "strokeDasharray": null
               }
             },
@@ -2925,9 +2969,23 @@
               "isTrustBoundary": false,
               "outOfScope": false,
               "reasonOutOfScope": "",
-              "hasOpenThreats": false,
+              "hasOpenThreats": true,
               "providesAuthentication": false,
-              "threats": []
+              "threats": [
+                {
+                  "id": "43ff9baf-c9d3-43ab-b81b-8b6ba178c4b5",
+                  "title": "Elevacion de privilegios",
+                  "status": "Open",
+                  "severity": "TBD",
+                  "type": "Elevation of privilege",
+                  "description": "Provide a description for this threat",
+                  "mitigation": "Provide remediation for this threat or a reason if status is N/A",
+                  "modelType": "default",
+                  "new": false,
+                  "number": 31,
+                  "score": ""
+                }
+              ]
             }
           },
           {
@@ -2948,17 +3006,17 @@
             ],
             "id": "3f70a6b7-bc68-4a7d-8acf-ae7faf291557",
             "source": {
-              "x": 1950,
-              "y": 370
+              "x": 2310,
+              "y": 510
             },
             "target": {
-              "x": 1650,
-              "y": 630
+              "x": 2010,
+              "y": 770
             },
             "vertices": [
               {
-                "x": 1730,
-                "y": 470
+                "x": 2090,
+                "y": 610
               }
             ]
           },
@@ -3097,6 +3155,19 @@
                   "new": false,
                   "number": 23,
                   "score": "3"
+                },
+                {
+                  "id": "f2911127-e2ba-435c-b67e-a225cede958f",
+                  "title": "Borrado de Logs",
+                  "status": "Open",
+                  "severity": "Low",
+                  "type": "Repudiation",
+                  "description": "Un atacante borra los logs de nuestro sitio web",
+                  "mitigation": "Provide remediation for this threat or a reason if status is N/A",
+                  "modelType": "default",
+                  "new": false,
+                  "number": 28,
+                  "score": ""
                 }
               ]
             }
@@ -3223,8 +3294,8 @@
           },
           {
             "position": {
-              "x": 1630,
-              "y": 310
+              "x": 1825,
+              "y": 380
             },
             "size": {
               "width": 130,
@@ -3467,6 +3538,6 @@
     ],
     "diagramTop": 1,
     "reviewer": "Guillermo Vera",
-    "threatTop": 27
+    "threatTop": 31
   }
 }
