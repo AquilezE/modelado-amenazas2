@@ -1,5 +1,5 @@
 {
-  "version": "2.2.0",
+  "version": "2.5.0",
   "summary": {
     "title": "DFD Library login",
     "owner": "Abraham Vazquez",
@@ -15,7 +15,7 @@
         "diagramType": "Generic",
         "placeholder": "New generic diagram description",
         "thumbnail": "./public/content/images/thumbnail.jpg",
-        "version": "2.2.0",
+        "version": "2.5.0",
         "cells": [
           {
             "position": {
@@ -39,6 +39,88 @@
             "visible": true,
             "shape": "actor",
             "zIndex": 1,
+            "ports": {
+              "groups": {
+                "top": {
+                  "position": "top",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                },
+                "right": {
+                  "position": "right",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                },
+                "bottom": {
+                  "position": "bottom",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                },
+                "left": {
+                  "position": "left",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                }
+              },
+              "items": [
+                {
+                  "group": "top",
+                  "id": "61fe15fa-5c4f-48a4-8743-a019ddcd76ce"
+                },
+                {
+                  "group": "right",
+                  "id": "dad011ab-d2f4-45e7-892c-5ad6e5ac0c5c"
+                },
+                {
+                  "group": "bottom",
+                  "id": "598f5ce9-36a1-4a52-ac56-777301d8f647"
+                },
+                {
+                  "group": "left",
+                  "id": "069bc4b5-9923-4e57-8c2e-9d4a0e438c07"
+                }
+              ]
+            },
             "id": "5a10cdb2-34bd-4690-965c-a308ad2c012c",
             "data": {
               "type": "tm.Actor",
@@ -100,6 +182,88 @@
             "visible": true,
             "shape": "process",
             "zIndex": 2,
+            "ports": {
+              "groups": {
+                "top": {
+                  "position": "top",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                },
+                "right": {
+                  "position": "right",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                },
+                "bottom": {
+                  "position": "bottom",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                },
+                "left": {
+                  "position": "left",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                }
+              },
+              "items": [
+                {
+                  "group": "top",
+                  "id": "61542727-7b71-48c9-afe9-b59ba455f74d"
+                },
+                {
+                  "group": "right",
+                  "id": "2f3d006d-b2ec-49e5-8f6f-55f838428262"
+                },
+                {
+                  "group": "bottom",
+                  "id": "7e984d16-3476-4b15-bbf0-5beddfd12e27"
+                },
+                {
+                  "group": "left",
+                  "id": "93999547-1f98-424d-8ef0-facf2113ae39"
+                }
+              ]
+            },
             "id": "2360493a-f0c0-4deb-bc31-60f79f872e37",
             "data": {
               "type": "tm.Process",
@@ -153,6 +317,7 @@
               "name": "Web response",
               "description": "",
               "outOfScope": false,
+              "isTrustBoundary": false,
               "reasonOutOfScope": "",
               "hasOpenThreats": true,
               "isBidirectional": false,
@@ -175,10 +340,10 @@
                 }
               ]
             },
-            "id": "fb7cfbe2-072f-4802-98af-6af4ba69fa04",
             "labels": [
               "Web response"
             ],
+            "id": "fb7cfbe2-072f-4802-98af-6af4ba69fa04",
             "source": {
               "cell": "2360493a-f0c0-4deb-bc31-60f79f872e37"
             },
@@ -216,6 +381,7 @@
               "name": "web request",
               "description": "",
               "outOfScope": false,
+              "isTrustBoundary": false,
               "reasonOutOfScope": "",
               "hasOpenThreats": true,
               "isBidirectional": false,
@@ -238,10 +404,10 @@
                 }
               ]
             },
-            "id": "02c24267-a3ec-42f5-bbc0-3ac9938aedca",
             "labels": [
               "web request"
             ],
+            "id": "02c24267-a3ec-42f5-bbc0-3ac9938aedca",
             "source": {
               "cell": "5a10cdb2-34bd-4690-965c-a308ad2c012c"
             },
@@ -268,10 +434,10 @@
               "isTrustBoundary": true,
               "hasOpenThreats": false
             },
-            "id": "5f32bb41-0768-40bf-9b4f-2ac2a1a8630e",
             "labels": [
               "Limite Web Server/DB"
             ],
+            "id": "5f32bb41-0768-40bf-9b4f-2ac2a1a8630e",
             "source": {
               "x": 670,
               "y": 420
@@ -304,10 +470,10 @@
               "isTrustBoundary": true,
               "hasOpenThreats": false
             },
-            "id": "2f9dc9f8-68aa-4df1-8612-7902eb759b74",
             "labels": [
               "Limite \nusuario/web \nserver"
             ],
+            "id": "2f9dc9f8-68aa-4df1-8612-7902eb759b74",
             "source": {
               "x": 280,
               "y": 130
@@ -350,6 +516,7 @@
               "name": "Visitas",
               "description": "",
               "outOfScope": true,
+              "isTrustBoundary": false,
               "reasonOutOfScope": "",
               "hasOpenThreats": false,
               "isBidirectional": false,
@@ -358,10 +525,10 @@
               "protocol": "",
               "threats": []
             },
-            "id": "1c25424a-d57b-4a53-b3b6-ef9f36c1fd4e",
             "labels": [
               "Visitas"
             ],
+            "id": "1c25424a-d57b-4a53-b3b6-ef9f36c1fd4e",
             "source": {
               "cell": "542f6f63-a7a6-4716-ae3b-2940c2535ab6"
             },
@@ -393,6 +560,7 @@
               "name": "UsuarioAutenticado() resultado",
               "description": "",
               "outOfScope": true,
+              "isTrustBoundary": false,
               "reasonOutOfScope": "",
               "hasOpenThreats": false,
               "isBidirectional": false,
@@ -401,10 +569,10 @@
               "protocol": "",
               "threats": []
             },
-            "id": "bccf9e36-1229-4dfe-b37f-f45155c5b13e",
             "labels": [
               "UsuarioAutenticado() resultado"
             ],
+            "id": "bccf9e36-1229-4dfe-b37f-f45155c5b13e",
             "source": {
               "cell": "5cc998f6-d90d-4855-98ea-7f9ec06f48ed"
             },
@@ -442,6 +610,7 @@
               "name": "UsuarioAutenticado()",
               "description": "",
               "outOfScope": false,
+              "isTrustBoundary": false,
               "reasonOutOfScope": "",
               "hasOpenThreats": true,
               "isBidirectional": false,
@@ -464,10 +633,10 @@
                 }
               ]
             },
-            "id": "df14a1eb-1b6d-4d7d-aa95-69119c3cc085",
             "labels": [
               "UsuarioAutenticado()"
             ],
+            "id": "df14a1eb-1b6d-4d7d-aa95-69119c3cc085",
             "source": {
               "cell": "2360493a-f0c0-4deb-bc31-60f79f872e37"
             },
@@ -504,6 +673,7 @@
               "name": "Usuario autenticado\nSQL Query\nResultado",
               "description": "",
               "outOfScope": false,
+              "isTrustBoundary": false,
               "reasonOutOfScope": "",
               "hasOpenThreats": false,
               "isBidirectional": false,
@@ -526,10 +696,10 @@
                 }
               ]
             },
-            "id": "6b159801-ef8a-418f-9200-86737ba7d4fc",
             "labels": [
               "Usuario autenticado\nSQL Query\nResultado"
             ],
+            "id": "6b159801-ef8a-418f-9200-86737ba7d4fc",
             "source": {
               "cell": "7919ee25-e189-4608-ad97-712c71a48fcf"
             },
@@ -570,6 +740,7 @@
               "name": "Usuario autenticado \nSQL Query",
               "description": "",
               "outOfScope": false,
+              "isTrustBoundary": false,
               "reasonOutOfScope": "",
               "hasOpenThreats": false,
               "isBidirectional": false,
@@ -592,10 +763,10 @@
                 }
               ]
             },
-            "id": "4463fee5-a26d-471f-b0a7-15e18747d93b",
             "labels": [
               "Usuario autenticado \nSQL Query"
             ],
+            "id": "4463fee5-a26d-471f-b0a7-15e18747d93b",
             "source": {
               "cell": "5cc998f6-d90d-4855-98ea-7f9ec06f48ed"
             },
@@ -637,6 +808,7 @@
               "name": "web request",
               "description": "",
               "outOfScope": false,
+              "isTrustBoundary": false,
               "reasonOutOfScope": "",
               "hasOpenThreats": true,
               "isBidirectional": false,
@@ -659,6 +831,9 @@
                 }
               ]
             },
+            "labels": [
+              "web request"
+            ],
             "id": "eec841a5-b5f7-4c6d-b3f4-1351d1665e78",
             "source": {
               "cell": "3e580783-b3f2-4faa-bf0e-cffa7a01b35e"
@@ -666,9 +841,6 @@
             "target": {
               "cell": "e3d51622-5418-467e-bec6-04bb887a18d5"
             },
-            "labels": [
-              "web request"
-            ],
             "vertices": [
               {
                 "x": 1380,
@@ -700,6 +872,7 @@
               "name": "Web response",
               "description": "",
               "outOfScope": false,
+              "isTrustBoundary": false,
               "reasonOutOfScope": "",
               "hasOpenThreats": true,
               "isBidirectional": false,
@@ -722,6 +895,9 @@
                 }
               ]
             },
+            "labels": [
+              "Web response"
+            ],
             "id": "57c977fb-9359-4f5d-abed-859085bc99c9",
             "source": {
               "cell": "e3d51622-5418-467e-bec6-04bb887a18d5"
@@ -729,9 +905,6 @@
             "target": {
               "cell": "3e580783-b3f2-4faa-bf0e-cffa7a01b35e"
             },
-            "labels": [
-              "Web response"
-            ],
             "vertices": [
               {
                 "x": 1380,
@@ -763,6 +936,7 @@
               "name": "web request",
               "description": "",
               "outOfScope": false,
+              "isTrustBoundary": false,
               "reasonOutOfScope": "",
               "hasOpenThreats": true,
               "isBidirectional": false,
@@ -785,6 +959,9 @@
                 }
               ]
             },
+            "labels": [
+              "web request"
+            ],
             "id": "6ab63f7f-e905-42e9-988b-4aed49d1879e",
             "source": {
               "cell": "af95918c-513e-462f-ba99-da903a2116e0"
@@ -792,9 +969,6 @@
             "target": {
               "cell": "e3d51622-5418-467e-bec6-04bb887a18d5"
             },
-            "labels": [
-              "web request"
-            ],
             "vertices": [
               {
                 "x": 1450,
@@ -826,6 +1000,7 @@
               "name": "web response",
               "description": "",
               "outOfScope": false,
+              "isTrustBoundary": false,
               "reasonOutOfScope": "",
               "hasOpenThreats": true,
               "isBidirectional": false,
@@ -848,6 +1023,9 @@
                 }
               ]
             },
+            "labels": [
+              "web response"
+            ],
             "id": "aef37678-e3d4-4f45-90a0-469caf0c6feb",
             "source": {
               "cell": "e3d51622-5418-467e-bec6-04bb887a18d5"
@@ -855,9 +1033,6 @@
             "target": {
               "cell": "af95918c-513e-462f-ba99-da903a2116e0"
             },
-            "labels": [
-              "web response"
-            ],
             "vertices": [
               {
                 "x": 1580,
@@ -888,6 +1063,7 @@
               "name": "Paginas ",
               "description": "",
               "outOfScope": true,
+              "isTrustBoundary": false,
               "reasonOutOfScope": "",
               "hasOpenThreats": false,
               "isBidirectional": false,
@@ -896,16 +1072,16 @@
               "protocol": "",
               "threats": []
             },
+            "labels": [
+              "Paginas "
+            ],
             "id": "38595af7-f441-4e42-8515-4bcfacc9ad38",
             "source": {
               "cell": "923f79dd-33c7-4028-8f90-cb9ef82a84a7"
             },
             "target": {
               "cell": "e3d51622-5418-467e-bec6-04bb887a18d5"
-            },
-            "labels": [
-              "Paginas "
-            ]
+            }
           },
           {
             "shape": "trust-boundary-curve",
@@ -920,6 +1096,9 @@
               "isTrustBoundary": true,
               "hasOpenThreats": false
             },
+            "labels": [
+              "Limite usuario/web server"
+            ],
             "id": "6f15fa29-c64a-467a-acce-fcfb2165005e",
             "source": {
               "x": 1220,
@@ -929,9 +1108,6 @@
               "x": 1410,
               "y": 460
             },
-            "labels": [
-              "Limite usuario/web server"
-            ],
             "vertices": [
               {
                 "x": 1360,
@@ -962,6 +1138,7 @@
               "name": "Queries",
               "description": "",
               "outOfScope": false,
+              "isTrustBoundary": false,
               "reasonOutOfScope": "",
               "hasOpenThreats": false,
               "isBidirectional": false,
@@ -984,6 +1161,9 @@
                 }
               ]
             },
+            "labels": [
+              "Queries"
+            ],
             "id": "344418ab-5ab5-4861-8b2e-7922f0de231b",
             "source": {
               "cell": "e3d51622-5418-467e-bec6-04bb887a18d5"
@@ -991,9 +1171,6 @@
             "target": {
               "cell": "2dc28d60-3d77-467f-8e13-f270d511ce31"
             },
-            "labels": [
-              "Queries"
-            ],
             "vertices": [
               {
                 "x": 1640,
@@ -1024,6 +1201,7 @@
               "name": "Resultados web app query",
               "description": "",
               "outOfScope": false,
+              "isTrustBoundary": false,
               "reasonOutOfScope": "",
               "hasOpenThreats": false,
               "isBidirectional": false,
@@ -1046,6 +1224,9 @@
                 }
               ]
             },
+            "labels": [
+              "Resultados web app query"
+            ],
             "id": "d74efcb5-18a6-4239-b2fc-298ceac7fefe",
             "source": {
               "cell": "2dc28d60-3d77-467f-8e13-f270d511ce31"
@@ -1053,9 +1234,6 @@
             "target": {
               "cell": "e3d51622-5418-467e-bec6-04bb887a18d5"
             },
-            "labels": [
-              "Resultados web app query"
-            ],
             "vertices": [
               {
                 "x": 1660,
@@ -1086,6 +1264,7 @@
               "name": "Lee web \napp config",
               "description": "",
               "outOfScope": true,
+              "isTrustBoundary": false,
               "reasonOutOfScope": "",
               "hasOpenThreats": false,
               "isBidirectional": false,
@@ -1094,6 +1273,9 @@
               "protocol": "",
               "threats": []
             },
+            "labels": [
+              "Lee web \napp config"
+            ],
             "id": "62b4bc1c-5fc7-41ae-9b62-0d804cc1ba28",
             "source": {
               "cell": "094ce0a3-4abb-4ccb-a214-fd50e3c7ee0c"
@@ -1106,9 +1288,6 @@
                 "x": 1640,
                 "y": 300
               }
-            ],
-            "labels": [
-              "Lee web \napp config"
             ]
           },
           {
@@ -1136,6 +1315,88 @@
             "visible": true,
             "shape": "store",
             "zIndex": 11,
+            "ports": {
+              "groups": {
+                "top": {
+                  "position": "top",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                },
+                "right": {
+                  "position": "right",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                },
+                "bottom": {
+                  "position": "bottom",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                },
+                "left": {
+                  "position": "left",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                }
+              },
+              "items": [
+                {
+                  "group": "top",
+                  "id": "33d2fe51-490b-4ac8-a871-4c35496e8f34"
+                },
+                {
+                  "group": "right",
+                  "id": "44408c31-c352-44bc-8f2e-ba4f3b1e8294"
+                },
+                {
+                  "group": "bottom",
+                  "id": "bad99ee0-aa9c-4b88-bfe3-067819015df7"
+                },
+                {
+                  "group": "left",
+                  "id": "2c81d4b6-f7bd-403b-ab10-85d19e66ead5"
+                }
+              ]
+            },
             "id": "542f6f63-a7a6-4716-ae3b-2940c2535ab6",
             "data": {
               "type": "tm.Store",
@@ -1188,6 +1449,88 @@
             "visible": true,
             "shape": "process",
             "zIndex": 12,
+            "ports": {
+              "groups": {
+                "top": {
+                  "position": "top",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                },
+                "right": {
+                  "position": "right",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                },
+                "bottom": {
+                  "position": "bottom",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                },
+                "left": {
+                  "position": "left",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                }
+              },
+              "items": [
+                {
+                  "group": "top",
+                  "id": "c6b353b3-832b-4a4e-b7d8-a82310208bf3"
+                },
+                {
+                  "group": "right",
+                  "id": "17668498-265d-4d7e-84e8-24e07eb18b26"
+                },
+                {
+                  "group": "bottom",
+                  "id": "2add559a-f9e0-45ff-a032-5efd938dd94a"
+                },
+                {
+                  "group": "left",
+                  "id": "a0870226-dd1b-4fef-828e-dcda488b6ebf"
+                }
+              ]
+            },
             "id": "5cc998f6-d90d-4855-98ea-7f9ec06f48ed",
             "data": {
               "type": "tm.Process",
@@ -1244,6 +1587,88 @@
             "visible": true,
             "shape": "store",
             "zIndex": 13,
+            "ports": {
+              "groups": {
+                "top": {
+                  "position": "top",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                },
+                "right": {
+                  "position": "right",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                },
+                "bottom": {
+                  "position": "bottom",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                },
+                "left": {
+                  "position": "left",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                }
+              },
+              "items": [
+                {
+                  "group": "top",
+                  "id": "473a85e6-97f2-4251-8117-f116ee812d71"
+                },
+                {
+                  "group": "right",
+                  "id": "0c6df2c4-9f3f-44d4-9495-fbb8dde8ab4d"
+                },
+                {
+                  "group": "bottom",
+                  "id": "79ba563d-e564-46c4-b6b2-7db88749e908"
+                },
+                {
+                  "group": "left",
+                  "id": "43496d48-b25b-4710-a5cd-8c26bb071610"
+                }
+              ]
+            },
             "id": "7919ee25-e189-4608-ad97-712c71a48fcf",
             "data": {
               "type": "tm.Store",
@@ -1308,8 +1733,90 @@
             },
             "visible": true,
             "shape": "actor",
-            "id": "3e580783-b3f2-4faa-bf0e-cffa7a01b35e",
             "zIndex": 14,
+            "ports": {
+              "groups": {
+                "top": {
+                  "position": "top",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                },
+                "right": {
+                  "position": "right",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                },
+                "bottom": {
+                  "position": "bottom",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                },
+                "left": {
+                  "position": "left",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                }
+              },
+              "items": [
+                {
+                  "group": "top",
+                  "id": "3f55270f-88cf-4f89-93f6-eb6a79e765e4"
+                },
+                {
+                  "group": "right",
+                  "id": "cbefb5d1-05e8-4b87-9f0f-b5b2f3d5b3a3"
+                },
+                {
+                  "group": "bottom",
+                  "id": "4c5980e5-bd49-45c7-b01f-0c95af462f6a"
+                },
+                {
+                  "group": "left",
+                  "id": "0cce3598-34e7-4a4a-9a7d-cf06a73862eb"
+                }
+              ]
+            },
+            "id": "3e580783-b3f2-4faa-bf0e-cffa7a01b35e",
             "data": {
               "type": "tm.Actor",
               "name": "Usuario",
@@ -1356,8 +1863,90 @@
             },
             "visible": true,
             "shape": "actor",
-            "id": "af95918c-513e-462f-ba99-da903a2116e0",
             "zIndex": 15,
+            "ports": {
+              "groups": {
+                "top": {
+                  "position": "top",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                },
+                "right": {
+                  "position": "right",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                },
+                "bottom": {
+                  "position": "bottom",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                },
+                "left": {
+                  "position": "left",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                }
+              },
+              "items": [
+                {
+                  "group": "top",
+                  "id": "e872b389-6ce7-48fe-b1d1-8b8ea0c2a638"
+                },
+                {
+                  "group": "right",
+                  "id": "cd24ef34-e050-4102-802b-45173478ac18"
+                },
+                {
+                  "group": "bottom",
+                  "id": "ceacdfb0-1004-414b-b521-c25f05d076f8"
+                },
+                {
+                  "group": "left",
+                  "id": "517bb36a-4fc2-49b4-a299-ea6fc270aad3"
+                }
+              ]
+            },
+            "id": "af95918c-513e-462f-ba99-da903a2116e0",
             "data": {
               "type": "tm.Actor",
               "name": "Bibliotecario",
@@ -1404,8 +1993,90 @@
             },
             "visible": true,
             "shape": "process",
-            "id": "e3d51622-5418-467e-bec6-04bb887a18d5",
             "zIndex": 16,
+            "ports": {
+              "groups": {
+                "top": {
+                  "position": "top",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                },
+                "right": {
+                  "position": "right",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                },
+                "bottom": {
+                  "position": "bottom",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                },
+                "left": {
+                  "position": "left",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                }
+              },
+              "items": [
+                {
+                  "group": "top",
+                  "id": "930fa98b-282c-48ce-bda4-af3c8b6dc0e1"
+                },
+                {
+                  "group": "right",
+                  "id": "b81b08e6-7c48-4de8-b0c9-f0e44c50b065"
+                },
+                {
+                  "group": "bottom",
+                  "id": "1c5d8ae9-ed98-406d-bb91-5382501d7f79"
+                },
+                {
+                  "group": "left",
+                  "id": "155ad47e-2c1a-41fe-a3c7-170131775f18"
+                }
+              ]
+            },
+            "id": "e3d51622-5418-467e-bec6-04bb887a18d5",
             "data": {
               "type": "tm.Process",
               "name": "Sitio web\nbiblioteca",
@@ -1458,8 +2129,90 @@
             },
             "visible": true,
             "shape": "store",
-            "id": "923f79dd-33c7-4028-8f90-cb9ef82a84a7",
             "zIndex": 17,
+            "ports": {
+              "groups": {
+                "top": {
+                  "position": "top",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                },
+                "right": {
+                  "position": "right",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                },
+                "bottom": {
+                  "position": "bottom",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                },
+                "left": {
+                  "position": "left",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                }
+              },
+              "items": [
+                {
+                  "group": "top",
+                  "id": "9b9ebd8c-5af7-48e7-b627-4abe6eab2fdc"
+                },
+                {
+                  "group": "right",
+                  "id": "421427ec-7be5-4cac-8bf7-9014c6679d4f"
+                },
+                {
+                  "group": "bottom",
+                  "id": "83cd86e6-0632-48d4-91cb-79d5bdf92dd6"
+                },
+                {
+                  "group": "left",
+                  "id": "8dafa256-9d04-4975-8298-8a11f7ca71ef"
+                }
+              ]
+            },
+            "id": "923f79dd-33c7-4028-8f90-cb9ef82a84a7",
             "data": {
               "type": "tm.Store",
               "name": "Paginas web en disco",
@@ -1515,8 +2268,90 @@
             },
             "visible": true,
             "shape": "store",
-            "id": "2dc28d60-3d77-467f-8e13-f270d511ce31",
             "zIndex": 18,
+            "ports": {
+              "groups": {
+                "top": {
+                  "position": "top",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                },
+                "right": {
+                  "position": "right",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                },
+                "bottom": {
+                  "position": "bottom",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                },
+                "left": {
+                  "position": "left",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                }
+              },
+              "items": [
+                {
+                  "group": "top",
+                  "id": "490c17d7-709e-42e4-b733-5bc35893e94a"
+                },
+                {
+                  "group": "right",
+                  "id": "a2fd786d-01f4-4e8d-bc10-a02ee1d1ad25"
+                },
+                {
+                  "group": "bottom",
+                  "id": "51c1688e-7001-4bb7-81cb-2678113b932d"
+                },
+                {
+                  "group": "left",
+                  "id": "b93c86a6-c0b6-4724-9f62-2b6232516779"
+                }
+              ]
+            },
+            "id": "2dc28d60-3d77-467f-8e13-f270d511ce31",
             "data": {
               "type": "tm.Store",
               "name": "Base de datos",
@@ -1585,8 +2420,90 @@
             },
             "visible": true,
             "shape": "store",
-            "id": "094ce0a3-4abb-4ccb-a214-fd50e3c7ee0c",
             "zIndex": 19,
+            "ports": {
+              "groups": {
+                "top": {
+                  "position": "top",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                },
+                "right": {
+                  "position": "right",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                },
+                "bottom": {
+                  "position": "bottom",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                },
+                "left": {
+                  "position": "left",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                }
+              },
+              "items": [
+                {
+                  "group": "top",
+                  "id": "46700405-a8d1-42f6-a5cb-02e4e45dbb64"
+                },
+                {
+                  "group": "right",
+                  "id": "4785561a-1522-4ef1-9631-bc3524895e7c"
+                },
+                {
+                  "group": "bottom",
+                  "id": "d0ca3a1b-431e-40d0-83b2-7bdfc93605db"
+                },
+                {
+                  "group": "left",
+                  "id": "46a88bca-70db-457d-a3d7-e7bd295f3d48"
+                }
+              ]
+            },
+            "id": "094ce0a3-4abb-4ccb-a214-fd50e3c7ee0c",
             "data": {
               "type": "tm.Store",
               "name": "web application config",
