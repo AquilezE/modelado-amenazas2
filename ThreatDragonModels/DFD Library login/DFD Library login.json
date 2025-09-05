@@ -1162,7 +1162,7 @@
                   "modelType": "default",
                   "new": false,
                   "number": 38,
-                  "score": ""
+                  "score": "2"
                 }
               ]
             },
@@ -1213,7 +1213,7 @@
               "protocol": "",
               "threats": [
                 {
-                  "id": "4e237148-11c9-45da-a8bb-edf2d2441491",
+                  "id": "15e802a1-5324-492b-ab1e-9c40f5520d7e",
                   "title": "Interceptacion de trafico del flujo al servidor",
                   "status": "Open",
                   "severity": "Medium",
@@ -1222,29 +1222,23 @@
                   "mitigation": "Enviar los datos usando HTTPS ",
                   "modelType": "default",
                   "new": false,
-                  "number": 36,
-                  "score": ""
+                  "number": 39,
+                  "score": "2"
                 }
               ]
             },
             "labels": [
               "HTTP\nRequest/Response"
             ],
-            "id": "e8d3a96c-ea02-4967-adb8-e75804910c55",
+            "id": "b854f37f-c693-47b9-90fb-1cea27ab1f30",
             "source": {
-              "cell": "5a10cdb2-34bd-4690-965c-a308ad2c012c",
-              "port": "dad011ab-d2f4-45e7-892c-5ad6e5ac0c5c"
+              "cell": "af95918c-513e-462f-ba99-da903a2116e0"
             },
             "target": {
-              "cell": "2360493a-f0c0-4deb-bc31-60f79f872e37",
-              "port": "7e984d16-3476-4b15-bbf0-5beddfd12e27"
+              "cell": "e3d51622-5418-467e-bec6-04bb887a18d5",
+              "port": "1c5d8ae9-ed98-406d-bb91-5382501d7f79"
             },
-            "vertices": [
-              {
-                "x": 330,
-                "y": 590
-              }
-            ]
+            "vertices": []
           },
           {
             "shape": "flow",
@@ -1289,7 +1283,7 @@
                   "modelType": "default",
                   "new": false,
                   "number": 37,
-                  "score": ""
+                  "score": "2"
                 }
               ]
             },
@@ -1345,7 +1339,7 @@
               "protocol": "",
               "threats": [
                 {
-                  "id": "15e802a1-5324-492b-ab1e-9c40f5520d7e",
+                  "id": "4e237148-11c9-45da-a8bb-edf2d2441491",
                   "title": "Interceptacion de trafico del flujo al servidor",
                   "status": "Open",
                   "severity": "Medium",
@@ -1354,23 +1348,29 @@
                   "mitigation": "Enviar los datos usando HTTPS ",
                   "modelType": "default",
                   "new": false,
-                  "number": 39,
-                  "score": ""
+                  "number": 36,
+                  "score": "2"
                 }
               ]
             },
             "labels": [
               "HTTP\nRequest/Response"
             ],
-            "id": "b854f37f-c693-47b9-90fb-1cea27ab1f30",
+            "id": "e8d3a96c-ea02-4967-adb8-e75804910c55",
             "source": {
-              "cell": "af95918c-513e-462f-ba99-da903a2116e0"
+              "cell": "5a10cdb2-34bd-4690-965c-a308ad2c012c",
+              "port": "dad011ab-d2f4-45e7-892c-5ad6e5ac0c5c"
             },
             "target": {
-              "cell": "e3d51622-5418-467e-bec6-04bb887a18d5",
-              "port": "1c5d8ae9-ed98-406d-bb91-5382501d7f79"
+              "cell": "2360493a-f0c0-4deb-bc31-60f79f872e37",
+              "port": "7e984d16-3476-4b15-bbf0-5beddfd12e27"
             },
-            "vertices": []
+            "vertices": [
+              {
+                "x": 330,
+                "y": 590
+              }
+            ]
           },
           {
             "position": {
@@ -2632,7 +2632,7 @@
                   "modelType": "default",
                   "new": false,
                   "number": 29,
-                  "score": ""
+                  "score": "2"
                 }
               ]
             }
@@ -2763,16 +2763,9 @@
                   "modelType": "default",
                   "new": false,
                   "number": 31,
-                  "score": ""
+                  "score": "2"
                 }
               ]
-            },
-            "tools": {
-              "items": [
-                "boundary",
-                "button-remove"
-              ],
-              "name": null
             }
           },
           {
@@ -2934,14 +2927,14 @@
                   "id": "e8ef6442-bd50-46ef-b003-865b8df50385",
                   "title": "Divulgación de información ",
                   "status": "Open",
-                  "severity": "High",
+                  "severity": "Medium",
                   "type": "Information disclosure",
                   "description": "La configuración de la aplicación web almacena las credenciales utilizadas por la aplicación web para acceder a la cola de mensajes. Un atacante podría robarlos y utilizarlos para leer datos confidenciales o colocar mensajes dudosos en la cola.",
                   "mitigation": "Las credenciales almacenadas deben estar cifradas.",
                   "modelType": "default",
                   "new": false,
                   "number": 23,
-                  "score": "3"
+                  "score": "2"
                 },
                 {
                   "id": "f2911127-e2ba-435c-b67e-a225cede958f",
@@ -2950,11 +2943,11 @@
                   "severity": "Low",
                   "type": "Repudiation",
                   "description": "Un atacante borra los logs de nuestro sitio web",
-                  "mitigation": "Provide remediation for this threat or a reason if status is N/A",
+                  "mitigation": "tener backups de los logs en otros lugares",
                   "modelType": "default",
                   "new": false,
                   "number": 28,
-                  "score": ""
+                  "score": "1"
                 }
               ]
             }
@@ -3088,7 +3081,7 @@
                   "modelType": "default",
                   "new": false,
                   "number": 32,
-                  "score": ""
+                  "score": "2"
                 },
                 {
                   "id": "950a922c-2e0b-4453-9caa-8dbbeb46b2b8",
@@ -3101,7 +3094,7 @@
                   "modelType": "default",
                   "new": false,
                   "number": 33,
-                  "score": ""
+                  "score": "3"
                 }
               ]
             }
@@ -3235,7 +3228,7 @@
                   "modelType": "default",
                   "new": false,
                   "number": 34,
-                  "score": ""
+                  "score": "2"
                 }
               ]
             }
