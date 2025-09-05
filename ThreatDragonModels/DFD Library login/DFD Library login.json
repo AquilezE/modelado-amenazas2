@@ -1265,7 +1265,8 @@
             "shape": "flow",
             "attrs": {
               "line": {
-                "stroke": "#333333",
+                "stroke": "red",
+                "strokeWidth": 2.5,
                 "targetMarker": {
                   "name": "block"
                 },
@@ -1286,12 +1287,26 @@
               "outOfScope": false,
               "isTrustBoundary": false,
               "reasonOutOfScope": "",
-              "hasOpenThreats": false,
+              "hasOpenThreats": true,
               "isBidirectional": false,
               "isEncrypted": false,
               "isPublicNetwork": false,
               "protocol": "",
-              "threats": []
+              "threats": [
+                {
+                  "id": "4e237148-11c9-45da-a8bb-edf2d2441491",
+                  "title": "Interceptacion de trafijo del flujo al servidor",
+                  "status": "Open",
+                  "severity": "Medium",
+                  "type": "Information disclosure",
+                  "description": "Los datos enviados al servidor web se pasan por texto plano (No usa TLS)",
+                  "mitigation": "Enviar los datos usando HTTPS ",
+                  "modelType": "default",
+                  "new": false,
+                  "number": 36,
+                  "score": ""
+                }
+              ]
             },
             "labels": [
               "HTTP\nRequest/Response"
@@ -1310,7 +1325,17 @@
                 "x": 330,
                 "y": 590
               }
-            ]
+            ],
+            "tools": {
+              "items": [
+                "boundary",
+                "button-remove",
+                "vertices",
+                "source-arrowhead",
+                "target-arrowhead"
+              ],
+              "name": null
+            }
           },
           {
             "position": {
@@ -3297,6 +3322,6 @@
     ],
     "diagramTop": 1,
     "reviewer": "Guillermo Vera",
-    "threatTop": 35
+    "threatTop": 36
   }
 }
