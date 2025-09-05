@@ -2756,7 +2756,7 @@
                   "id": "43ff9baf-c9d3-43ab-b81b-8b6ba178c4b5",
                   "title": "Elevacion de privilegios",
                   "status": "Open",
-                  "severity": "TBD",
+                  "severity": "Medium",
                   "type": "Elevation of privilege",
                   "description": "Un usuario no autenticado podria escalar privilegios aprovechando fallos de autorizacion",
                   "mitigation": "Revisiones de Control de Acceso.\nPrincipio de privilegio minimo.\nEscaneo de rutas y endpoints expuestos.",
@@ -2766,6 +2766,13 @@
                   "score": ""
                 }
               ]
+            },
+            "tools": {
+              "items": [
+                "boundary",
+                "button-remove"
+              ],
+              "name": null
             }
           },
           {
