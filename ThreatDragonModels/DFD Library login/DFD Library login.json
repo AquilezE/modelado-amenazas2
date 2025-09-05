@@ -1082,52 +1082,6 @@
                   "name": "block"
                 },
                 "sourceMarker": {
-                  "name": "block"
-                },
-                "strokeDasharray": null
-              }
-            },
-            "width": 200,
-            "height": 100,
-            "zIndex": 10,
-            "connector": "smooth",
-            "data": {
-              "type": "tm.Flow",
-              "name": "HTTP\nRequest/Response",
-              "description": "",
-              "outOfScope": false,
-              "isTrustBoundary": false,
-              "reasonOutOfScope": "",
-              "hasOpenThreats": false,
-              "isBidirectional": true,
-              "isEncrypted": false,
-              "isPublicNetwork": false,
-              "protocol": "",
-              "threats": []
-            },
-            "labels": [
-              "HTTP\nRequest/Response"
-            ],
-            "id": "2936f87b-536f-43dc-8759-9b6d6278ec9a",
-            "source": {
-              "cell": "3e580783-b3f2-4faa-bf0e-cffa7a01b35e",
-              "port": "cbefb5d1-05e8-4b87-9f0f-b5b2f3d5b3a3"
-            },
-            "target": {
-              "cell": "e3d51622-5418-467e-bec6-04bb887a18d5",
-              "port": "155ad47e-2c1a-41fe-a3c7-170131775f18"
-            },
-            "vertices": []
-          },
-          {
-            "shape": "flow",
-            "attrs": {
-              "line": {
-                "stroke": "#333333",
-                "targetMarker": {
-                  "name": "block"
-                },
-                "sourceMarker": {
                   "name": ""
                 },
                 "strokeDasharray": null
@@ -1169,7 +1123,8 @@
             "shape": "flow",
             "attrs": {
               "line": {
-                "stroke": "#333333",
+                "stroke": "red",
+                "strokeWidth": 2.5,
                 "targetMarker": {
                   "name": "block"
                 },
@@ -1190,23 +1145,38 @@
               "outOfScope": false,
               "isTrustBoundary": false,
               "reasonOutOfScope": "",
-              "hasOpenThreats": false,
+              "hasOpenThreats": true,
               "isBidirectional": true,
               "isEncrypted": false,
               "isPublicNetwork": false,
               "protocol": "",
-              "threats": []
+              "threats": [
+                {
+                  "id": "18f0684b-1c80-4b31-a502-b0fb89e060be",
+                  "title": "Interceptacion de trafico del flujo al servidor",
+                  "status": "Open",
+                  "severity": "Medium",
+                  "type": "Information disclosure",
+                  "description": "Los datos enviados al servidor web se pasan por texto plano (No usa TLS)",
+                  "mitigation": "Provide remediation for this threat or a reason if status is N/A",
+                  "modelType": "default",
+                  "new": false,
+                  "number": 38,
+                  "score": ""
+                }
+              ]
             },
             "labels": [
               "HTTP\nRequest/Response"
             ],
-            "id": "b854f37f-c693-47b9-90fb-1cea27ab1f30",
+            "id": "2936f87b-536f-43dc-8759-9b6d6278ec9a",
             "source": {
-              "cell": "af95918c-513e-462f-ba99-da903a2116e0"
+              "cell": "3e580783-b3f2-4faa-bf0e-cffa7a01b35e",
+              "port": "cbefb5d1-05e8-4b87-9f0f-b5b2f3d5b3a3"
             },
             "target": {
               "cell": "e3d51622-5418-467e-bec6-04bb887a18d5",
-              "port": "1c5d8ae9-ed98-406d-bb91-5382501d7f79"
+              "port": "155ad47e-2c1a-41fe-a3c7-170131775f18"
             },
             "vertices": []
           },
@@ -1214,7 +1184,8 @@
             "shape": "flow",
             "attrs": {
               "line": {
-                "stroke": "#333333",
+                "stroke": "red",
+                "strokeWidth": 2.5,
                 "targetMarker": {
                   "name": "block"
                 },
@@ -1235,12 +1206,92 @@
               "outOfScope": false,
               "isTrustBoundary": false,
               "reasonOutOfScope": "",
-              "hasOpenThreats": false,
+              "hasOpenThreats": true,
               "isBidirectional": true,
               "isEncrypted": false,
               "isPublicNetwork": false,
               "protocol": "",
-              "threats": []
+              "threats": [
+                {
+                  "id": "4e237148-11c9-45da-a8bb-edf2d2441491",
+                  "title": "Interceptacion de trafico del flujo al servidor",
+                  "status": "Open",
+                  "severity": "Medium",
+                  "type": "Information disclosure",
+                  "description": "Los datos enviados al servidor web se pasan por texto plano (No usa TLS)",
+                  "mitigation": "Enviar los datos usando HTTPS ",
+                  "modelType": "default",
+                  "new": false,
+                  "number": 36,
+                  "score": ""
+                }
+              ]
+            },
+            "labels": [
+              "HTTP\nRequest/Response"
+            ],
+            "id": "e8d3a96c-ea02-4967-adb8-e75804910c55",
+            "source": {
+              "cell": "5a10cdb2-34bd-4690-965c-a308ad2c012c",
+              "port": "dad011ab-d2f4-45e7-892c-5ad6e5ac0c5c"
+            },
+            "target": {
+              "cell": "2360493a-f0c0-4deb-bc31-60f79f872e37",
+              "port": "7e984d16-3476-4b15-bbf0-5beddfd12e27"
+            },
+            "vertices": [
+              {
+                "x": 330,
+                "y": 590
+              }
+            ]
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "red",
+                "strokeWidth": 2.5,
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": "block"
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "HTTP\nRequest/Response",
+              "description": "",
+              "outOfScope": false,
+              "isTrustBoundary": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": true,
+              "isBidirectional": true,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": [
+                {
+                  "id": "6f70dfd1-62cf-4414-b3b8-42a716749918",
+                  "title": "Interceptacion de trafico del flujo al servidor",
+                  "status": "Open",
+                  "severity": "Medium",
+                  "type": "Information disclosure",
+                  "description": "Los datos enviados al servidor web se pasan por texto plano (No usa TLS)",
+                  "mitigation": "Enviar los datos usando HTTPS ",
+                  "modelType": "default",
+                  "new": false,
+                  "number": 37,
+                  "score": ""
+                }
+              ]
             },
             "labels": [
               "HTTP\nRequest/Response"
@@ -1271,7 +1322,7 @@
                   "name": "block"
                 },
                 "sourceMarker": {
-                  "name": ""
+                  "name": "block"
                 },
                 "strokeDasharray": null
               }
@@ -1288,14 +1339,14 @@
               "isTrustBoundary": false,
               "reasonOutOfScope": "",
               "hasOpenThreats": true,
-              "isBidirectional": false,
+              "isBidirectional": true,
               "isEncrypted": false,
               "isPublicNetwork": false,
               "protocol": "",
               "threats": [
                 {
-                  "id": "4e237148-11c9-45da-a8bb-edf2d2441491",
-                  "title": "Interceptacion de trafijo del flujo al servidor",
+                  "id": "15e802a1-5324-492b-ab1e-9c40f5520d7e",
+                  "title": "Interceptacion de trafico del flujo al servidor",
                   "status": "Open",
                   "severity": "Medium",
                   "type": "Information disclosure",
@@ -1303,7 +1354,7 @@
                   "mitigation": "Enviar los datos usando HTTPS ",
                   "modelType": "default",
                   "new": false,
-                  "number": 36,
+                  "number": 39,
                   "score": ""
                 }
               ]
@@ -1311,31 +1362,15 @@
             "labels": [
               "HTTP\nRequest/Response"
             ],
-            "id": "e8d3a96c-ea02-4967-adb8-e75804910c55",
+            "id": "b854f37f-c693-47b9-90fb-1cea27ab1f30",
             "source": {
-              "cell": "5a10cdb2-34bd-4690-965c-a308ad2c012c",
-              "port": "dad011ab-d2f4-45e7-892c-5ad6e5ac0c5c"
+              "cell": "af95918c-513e-462f-ba99-da903a2116e0"
             },
             "target": {
-              "cell": "2360493a-f0c0-4deb-bc31-60f79f872e37",
-              "port": "7e984d16-3476-4b15-bbf0-5beddfd12e27"
+              "cell": "e3d51622-5418-467e-bec6-04bb887a18d5",
+              "port": "1c5d8ae9-ed98-406d-bb91-5382501d7f79"
             },
-            "vertices": [
-              {
-                "x": 330,
-                "y": 590
-              }
-            ],
-            "tools": {
-              "items": [
-                "boundary",
-                "button-remove",
-                "vertices",
-                "source-arrowhead",
-                "target-arrowhead"
-              ],
-              "name": null
-            }
+            "vertices": []
           },
           {
             "position": {
@@ -2443,6 +2478,8 @@
             "tools": {
               "items": [
                 "boundary",
+                "button-remove",
+                "boundary",
                 "button-remove"
               ],
               "name": null
@@ -3322,6 +3359,6 @@
     ],
     "diagramTop": 1,
     "reviewer": "Guillermo Vera",
-    "threatTop": 36
+    "threatTop": 39
   }
 }
